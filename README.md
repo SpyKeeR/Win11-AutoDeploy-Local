@@ -6,6 +6,9 @@
 [![Windows 11](https://img.shields.io/badge/Windows-11-blue.svg)](https://www.microsoft.com/windows/windows-11)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue.svg)](https://github.com/PowerShell/PowerShell)
 
+<img width="1536" height="922" alt="Win11-AutoDeploy-Local-ban" src="https://github.com/user-attachments/assets/aa2bb6f4-d020-44a1-af3a-4e26a518c294" />
+
+
 ## 📖 Description
 
 Win11-AutoDeploy-Local est une solution complète de déploiement automatisé de postes Windows 11 développée dans le cadre d'un stage de formation TSSR. Cette solution répond au besoin de déploiement de masse sans infrastructure distribuée (MECM/SCCM/WDS/MDT), en utilisant des fichiers de réponses Windows et des scripts PowerShell pour automatiser l'ensemble du processus d'installation et de configuration.
