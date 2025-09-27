@@ -1,0 +1,62 @@
+# Logs et fichiers temporaires
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+
+# Fichiers de sauvegarde Windows
+*.bak
+*.backup
+
+# Fichiers Office temporaires
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Fichiers système Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+
+# Fichiers PowerShell temporaires
+*.ps1xml
+
+# Répertoires de build temporaires
+build/
+dist/
+output/
+
+# Fichiers de configuration locale (à personnaliser)
+local-config.xml
+personal-settings.ps1
+
+# Fichiers de test
+test-results/
+*.test
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Documentation générée automatiquement
+docs/generated/
+
+# Clés et certificats (IMPORTANT: Ne jamais commiter)
+*.pfx
+*.p12
+*.key
+*.pem
+*.crt
+
+# Variables d'environnement
+.env
+.env.local
+
+# ISOs et images de déploiement
+*.iso
+*.wim
+*.esd
