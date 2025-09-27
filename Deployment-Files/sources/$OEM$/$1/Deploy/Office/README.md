@@ -32,7 +32,7 @@ Office/
 ```
 Office/
 ├── setup.exe                    # Office Deployment Tool
-├── config-install.xml           # Fichier de configuration (OBLIGATOIRE)
+├── config*.xml           # Fichier de configuration (OBLIGATOIRE)
 ├── Office/                      # Dossier des sources téléchargées
 │   └── Data/
 └── [autres fichiers ODT]
@@ -41,11 +41,11 @@ Office/
 ### Instructions :
 1. **Téléchargez l'Office Deployment Tool** depuis Microsoft
 2. **Générez votre configuration** sur https://config.office.com/deploymentsettings
-3. **Nommez le fichier** : `config-*.xml` (commence par "config" et finit par ".xml")
+3. **Nommez le fichier** : `config*.xml` (commence par "config" et finit par ".xml")
 4. **Téléchargez les sources** :
    ```bash
    # Depuis ce dossier
-   setup.exe /download config-install.xml
+   setup.exe /download config*.xml
    ```
 
 ### Exemple de fichier config-install.xml :
@@ -68,13 +68,13 @@ Office/
 
 Le script `PostInstall.ps1` détecte automatiquement :
 - Les fichiers **.msp** pour Office 2016
-- Les fichiers **config*.xml** pour Office moderne
+- Les fichiers **config\*.xml** pour Office moderne
 - Adapte l'installation en conséquence
 
 ## ⚠️ Important
 
 - **Office 2016** : Le script cherche les fichiers .msp dans ce dossier
-- **Office moderne** : Le script cherche les fichiers config*.xml
+- **Office moderne** : Le script cherche les fichiers config\*.xml
 - **Activation** : L'activation se fait automatiquement via `ActivateOffice.ps1`
 
 ---
