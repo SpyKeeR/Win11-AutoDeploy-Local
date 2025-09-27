@@ -6,7 +6,7 @@
 [![Windows 11](https://img.shields.io/badge/Windows-11-blue.svg)](https://www.microsoft.com/windows/windows-11)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue.svg)](https://github.com/PowerShell/PowerShell)
 
-<img width="1536" height="922" alt="Win11-AutoDeploy-Local-ban" src="https://github.com/user-attachments/assets/aa2bb6f4-d020-44a1-af3a-4e26a518c294" />
+<img width="900" height="540" alt="Win11-AutoDeploy-Local-ban" src="https://github.com/user-attachments/assets/1d7625e1-ae21-47d5-a61b-09d8b1385405" />
 
 
 ## 📖 Description
