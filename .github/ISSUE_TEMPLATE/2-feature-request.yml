@@ -1,0 +1,41 @@
+name: Demande de fonctionnalité
+description: Proposer une nouvelle fonctionnalité pour Win11-AutoDeploy-Local
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - SpyKeeR
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de proposer une amélioration ! 🚀
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "✨ Description de la fonctionnalité"
+      description: "Décrivez la fonctionnalité souhaitée"
+      placeholder: "Je souhaiterais que..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: "🎯 Cas d'usage"
+      description: "Dans quel contexte cette fonctionnalité serait-elle utile ?"
+      placeholder: "Cette fonctionnalité permettrait de..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "📊 Priorité"
+      options:
+        - "Basse - Nice to have"
+        - "Moyenne - Amélioration significative"
+        - "Haute - Fonctionnalité critique"
+      default: 0
+    validations:
+      required: true

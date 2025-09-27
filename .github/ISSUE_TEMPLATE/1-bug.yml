@@ -1,0 +1,107 @@
+name: "🐛 Bug Report"
+description: "Signaler un problème avec Win11-AutoDeploy-Local"
+title: "[BUG]: "
+labels: ["bug", "triage"]
+assignees:
+  - SpyKeeR
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de remplir ce rapport de bug pour Win11-AutoDeploy-Local !
+        
+        Cela nous aide à améliorer le processus de déploiement automatique de Windows 11.
+
+  - type: input
+    id: contact
+    attributes:
+      label: "📧 Contact"
+      description: "Comment peut-on vous contacter si nous avons besoin de plus d'informations ?"
+      placeholder: "ex. email@example.com"
+    validations:
+      required: false
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "🐛 Description du problème"
+      description: "Décrivez clairement le bug rencontré"
+      placeholder: "Expliquez ce qui ne fonctionne pas..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "🔄 Étapes pour reproduire"
+      description: "Comment reproduire ce problème ?"
+      placeholder: |
+        1. Première étape...
+        2. Deuxième étape...
+        3. Le bug apparaît...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows-build
+    attributes:
+      label: "💻 Build Windows 11"
+      description: "Quelle version de Windows 11 utilisez-vous ?"
+      options:
+        - "Windows 11 22H2 (Build 22621)"
+        - "Windows 11 23H2 (Build 22631)"
+        - "Windows 11 24H2 (Build 26100)"
+        - "Autre (préciser dans les détails)"
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment-type
+    attributes:
+      label: "💾 Type de déploiement"
+      description: "Comment avez-vous utilisé Win11-AutoDeploy-Local ?"
+      options:
+        - "Clé USB bootable"
+        - "Fichier ISO"
+        - "Machine virtuelle"
+        - "Autre"
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: "🖥️ Matériel"
+      description: "Marque et modèle de l'ordinateur/composants"
+      placeholder: "ex. Dell XPS 13, Intel i7-12700, 16GB RAM..."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📋 Logs et messages d'erreur"
+      description: "Collez ici les logs pertinents (C:\\Windows\\Setup\\Logs\\, messages d'erreur, etc.)"
+      render: shell
+      placeholder: "Collez les logs ici..."
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "✅ Comportement attendu"
+      description: "Que devrait-il se passer normalement ?"
+      placeholder: "Le déploiement devrait..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "📝 Vérifications"
+      description: "Merci de confirmer les points suivants :"
+      options:
+        - label: "J'ai vérifié que ce problème n'a pas déjà été signalé"
+          required: true
+        - label: "J'ai suivi le guide de démarrage rapide (QUICKSTART.md)"
+          required: true
+        - label: "J'ai consulté la documentation de dépannage (docs/troubleshooting.md)"
+          required: false
