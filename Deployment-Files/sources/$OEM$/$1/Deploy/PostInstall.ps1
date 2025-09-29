@@ -128,7 +128,6 @@ Try {
             if ($rc -ne 0) { Write-Log "Attention: ODT a échoué avec le code $rc" }
             else { 
                 Write-Log "Installation d'Office terminée avec succès."
-                reg add "HKLM\SOFTWARE\Microsoft\Office\16.0\Common\OfficeUpdate" /v EnableAutomaticUpdates /t REG_DWORD /d 1 /f
             }
 
             # Si ODT n'est pas disponible, tentative d'installation silencieuse avec MSP
